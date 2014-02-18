@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<head>
+
+<title>Daysmiths | Andrew's Day</title>
+
+<meta name="description" content="The portfolio of Tom Petty, a London based designer." />
+<meta name="author" content="Tom Petty - @tp">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="//use.typekit.net/jrj4dnp.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+</head>
+	
+<body>
+	
+<div class="container">
+		
+	<header>
+		
+		<a href="index.html" class="logo">Daysmiths</a>
+		
+		<a href="#" id="menu-icon">Menu</a>
+		
+		<ul id="menu">
+			<li><a href="/">View all</a></li>
+			<li><a href="/">Sign up</a></li>
+		</ul>
+				
+	</header>
+		
+	<div class="quote">
+					
+		<blockquote>"Make sure you don't skip the walk &mdash; it's the best part of the day. Don't worry about getting lost, that's sort of the point in doing it."</blockquote>
+		
+		<p class="name">James M.</p>
+		
+	</div>
+		
+	<div id="day-wrapper">
+		
+		<div id="line"></div>
+		
+		<section>
+			
+			<img src="img/weather.png">
+			
+			<p class="temperature">22C</p>
+			
+			<p>Bring an umbrella, leave your coat</p>
+			
+		</section>
+		
+		<h3>Morning</h3>
+		
+		<section>
+			
+			<img src="img/coffee.png">
+						
+			<p>Start with a flat white at Fix 126 on Curtain Road, Shoreditch</p>
+			
+		</section>
+		
+		<section>
+			
+			<img src="img/shopping.png">
+						
+			<p>Head to Lambs Conduit Street for some shopping <span class="button">Guide</span></p>
+			
+		</section>
+		
+		<h3>Afternoon</h3>
+	
+	</div>
+		
+	<footer>
+	
+		&copy; <a href="http://www.anothertompetty.com" target="_blank">Tom Petty 2014</a>
+		
+	</footer>
+	
+</div>
+
+<!--mobile toggle menu-->
+
+<script>
+
+$(document).ready(function() {
+        $('#menu-icon').click(function() {
+                $('#menu').slideToggle("400");
+        });
+    });
+
+	$(document).ready(function() {
+	        $('li.place').click(function() {
+	                $('.detail').toggle("400");
+	        });
+	    });
+
+</script>
+
+<script src="js/smooth_anchor_snippet.js"></script>		
+						
+</body>
+	
+</html>
