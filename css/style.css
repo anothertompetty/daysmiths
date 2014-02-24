@@ -197,8 +197,8 @@ header ul a, p a {
 
 /*mobile styles*/
 
-/*600 up*/
-@media only screen and (min-width:600px) {
+/*480 up*/
+@media only screen and (min-width:480px) {
 
 header {
 	background-color: transparent;
@@ -245,6 +245,12 @@ blockquote {
 	display: inline-block
 }
 
+.item {
+	width: 480px;
+	margin: 0 auto;
+	padding: 120px 0px 120px 0px;
+}
+
 footer {
 	position: fixed;
 	padding: 0;
@@ -261,14 +267,23 @@ footer {
     
 }
 
-/* 800 up */
- @media screen and (min-width:800px) {
+/* 960 up */
+ @media screen and (min-width:960px) {
 
 blockquote {
 	font-size: 24px;
 	line-height: 125%;
 }
-	
+
+#container {
+	width: 960px;
+}
+
+.item {
+	display: inline-block;
+	float: left;
+	padding: 180px 0px;
+}
 
 }
   
