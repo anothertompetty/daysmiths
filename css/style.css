@@ -1,0 +1,321 @@
+/* 
+Author: Tom Petty
+anothertompetty.com
+Copyright 2014
+*/
+
+/* reset */
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+/* base/master */
+
+body
+{
+	font-family: "minion-pro",times, georgia, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #3C3C3C;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;       
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto !important;
+}
+
+img a
+{
+	text-decoration: none;
+}
+
+/*layout styles*/
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #fff;
+	min-width: 320px;
+}
+
+#menu-icon {
+	position: absolute;
+	display: inline-block;
+	left: auto;
+	right: 10px;
+	top: 10px;
+}
+
+header ul {
+	display: none;
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 20px;	
+}
+
+header ul li {
+	padding-top: 20px;
+}
+
+.logo {
+	width: 128px;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	background-image: url('logo.svg');
+	background-repeat: no-repeat;
+	background-position-y: 14px;
+	text-indent: -9999px;
+	z-index: 10;
+}
+
+header img.logo a {
+	width: 2px;
+}
+
+.quote {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+section {
+	text-align: center;
+}
+
+.item {
+	position: relative;
+	padding: 60px 0px 60px 0px;
+	background-color: #000;
+	width: 100%;
+}
+
+.item p {
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.first {
+	background-color: rgb(98,170,238);
+}
+
+.second {
+	background-color: rgb(125,186,241);
+}
+
+.third {
+	background-color: rgb(147,233,196);
+}
+
+.fourth {
+	background-color: rgb(128,227,182);
+}
+
+.fifth {
+	background-color: rgb(235,164,130);
+}
+
+.sixth {
+	background-color: rgb(237,176,167);
+}
+
+hr {
+	width: 10%;
+	border: 0;
+	border-bottom: 1px white solid;
+}
+
+footer {
+	text-align: center;
+	color: #3c3c3c;
+	background-color: #fff;
+}
+
+/*typography styles*/
+
+h1 {
+	position: absolute;
+	width: 60%;
+	margin: 56% 15% 0 15%;
+	color: #fff;
+	text-align: center;
+	font-family: "futura-pt", helvetica, arial, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-style: none;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+blockquote {
+	text-align: center;
+	margin: 0 auto;
+	line-height: 130%;
+}
+
+p.name {
+	text-align: center;
+}
+
+/*link styles*/
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #3c3c3c;
+}
+
+header ul a, p a {
+	border-bottom: 1px powderblue solid;
+}
+
+/*mobile styles*/
+
+/*600 up*/
+@media only screen and (min-width:600px) {
+
+header {
+	background-color: transparent;
+	padding-top: 16px;
+	box-sizing: border-box;
+}
+
+.logo {
+	width: 128px;
+	padding: 0px;
+	position: fixed;
+	background-position-y: 0px;
+	margin-left: 47px;
+}
+
+#menu-icon {
+	display: none;
+}
+
+header ul {
+	display: block;
+	position: fixed;
+	text-align: left;
+	background-color: transparent;
+	padding: 0;
+	font-size: 14px;
+	left: auto;
+	right: 30px;
+	top: 10px;
+	z-index: 10;
+	padding-top: 0px;
+	width: auto;
+}
+
+header ul li {
+	padding: 0;
+	margin-right: 20px;
+	float: left;
+}
+
+blockquote {
+	font-size: 18px;
+	line-height: 130%;
+	display: inline-block
+}
+
+footer {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	top: auto;
+	bottom: 15px;
+	left: auto;
+	right: 50px;
+	z-index: 10;
+	background-color: transparent;
+	font-size: 14px;
+	opacity: 0.5;
+}
+    
+}
+
+/* 800 up */
+ @media screen and (min-width:800px) {
+
+blockquote {
+	font-size: 24px;
+	line-height: 125%;
+}
+	
+
+}
+  
+/* 1200 up */
+ @media screen and (min-width:1200px) {
+
+.quote {
+	width: 40%;
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+	margin-top: 150px;
+}
+
+blockquote {
+	font-size: 32px;
+	line-height: 120%;
+}
+
+}
+  
+/* 11c - 1300 up (increase base font size) */
+@media screen and (min-width:1300px) {
+    
+}
+  
+/* 11d - 1400 up (increase margins) */
+@media screen and (min-width:1400px) {
+
+	
+}
+
+/* 11e - 1500 up */
+@media screen and (min-width:1500px) {
+    
+}
+  
+/* 11f - 1800 up (increase base font size) */
+@media screen and (min-width:1800px) {
+    
+}
+
+  /* 11g - 2000 up (increase base font size) */
+  @media screen and (min-width:2000px) {
+    
+  }
+  
+  /* 11h - 2400 up (increase margins) */
+  @media screen and (min-width:2400px) {
+    
+  }
