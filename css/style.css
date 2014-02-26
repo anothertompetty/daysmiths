@@ -47,6 +47,7 @@ img a
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
+	background-color: #fff;
 }
 
 header {
@@ -78,17 +79,25 @@ header ul li {
 .logo {
 	width: 128px;
 	padding: 10px;
+	position: relative;
 	display: block;
 	margin: 0 auto;
 	background-image: url('logo.svg');
 	background-repeat: no-repeat;
 	background-position-y: 14px;
+	background-position-x: 11px;
 	text-indent: -9999px;
 	z-index: 10;
 }
 
 header img.logo a {
 	width: 2px;
+}
+
+img.avatar {
+	display: block;
+	width: 128px;
+	margin: 0 auto;
 }
 
 .quote {
@@ -216,6 +225,7 @@ header {
 	width: 300px;
 	padding: 0px;
 	margin-top: 6px;
+	margin-left: 20px;
 	left: 0px;
 	background-position-y: 0px;
 	display: inline-block;
@@ -231,9 +241,10 @@ header ul {
 	text-align: left;
 	background-color: transparent;
 	padding: 0px;
+	margin-right: 20px;
 	font-size: 14px;
 	left: auto;
-	right: 1px;
+	right: 0px;
 	z-index: 10;
 	width: auto;
 }
@@ -242,6 +253,10 @@ header ul li {
 	padding: 0;
 	margin-right: 20px;
 	float: left;
+}
+
+header ul li:last-child {
+	margin-right: 0px;
 }
 
 .quote {
@@ -284,6 +299,14 @@ footer {
 	width: 960px;
 }
 
+.logo {
+	margin-left: 0px;
+}
+
+header ul {
+	margin-right: 0px;
+}
+
 .item {
 	display: inline-block;
 	float: left;
@@ -292,8 +315,8 @@ footer {
 
 }
   
-/* 1200 up */
- @media screen and (min-width:1200px) {
+/* 1600 up */
+ @media screen and (min-width:1600px) {
 
 }
 
