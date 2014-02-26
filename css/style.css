@@ -103,8 +103,8 @@ img.avatar {
 .quote {
 	width: 80%;
 	margin: 0 auto;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 section {
@@ -153,16 +153,17 @@ section {
 }
 
 hr {
-	width: 10%;
+	width: 40px;
 	border: 0;
 	border-bottom: 1px white solid;
 }
 
 .quote hr {
-	width: 10%;
+	width: 40px;
 	border: 0;
 	border-bottom: 1px #3c3c3c solid;
-	margin-top: 15px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 footer {
@@ -262,7 +263,7 @@ header ul li:last-child {
 .quote {
 	width: 480px;
 	margin: 0 auto;
-	padding: 80px 0px;
+	padding: 40px 0px;
 }
 
 blockquote {
@@ -311,6 +312,10 @@ header ul {
 	display: inline-block;
 	float: left;
 	padding: 180px 0px;
+}
+
+.item.last {
+	margin-bottom: 40px;
 }
 
 }
