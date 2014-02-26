@@ -20,6 +20,7 @@ body
 	font-size: 18px;
 	line-height: 150%;
 	color: #3C3C3C;
+	background-color: #f9f9f9;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	-webkit-box-sizing: border-box;
@@ -47,11 +48,9 @@ img a
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	background-color: #fff;
 }
 
 header {
-	background-color: #fff;
 	min-width: 320px;
 }
 
