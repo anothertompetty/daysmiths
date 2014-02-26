@@ -44,6 +44,7 @@ img a
 /*layout styles*/
 
 #container {
+	position: relative;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -214,6 +215,7 @@ header {
 .logo {
 	width: 300px;
 	padding: 0px;
+	margin-top: 6px;
 	left: 0px;
 	background-position-y: 0px;
 	display: inline-block;
@@ -224,7 +226,7 @@ header {
 }
 
 header ul {
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	text-align: left;
 	background-color: transparent;
@@ -294,34 +296,13 @@ footer {
  @media screen and (min-width:1200px) {
 
 }
-  
-/* 11c - 1300 up (increase base font size) */
-@media screen and (min-width:1300px) {
-    
-}
-  
-/* 11d - 1400 up (increase margins) */
-@media screen and (min-width:1400px) {
 
-	
-}
-
-/* 11e - 1500 up */
-@media screen and (min-width:1500px) {
+/* 11g - 2000 up (increase base font size) */
+@media screen and (min-width:2000px) {
     
 }
   
-/* 11f - 1800 up (increase base font size) */
-@media screen and (min-width:1800px) {
+/* 11h - 2400 up (increase margins) */
+@media screen and (min-width:2400px) {
     
 }
-
-  /* 11g - 2000 up (increase base font size) */
-  @media screen and (min-width:2000px) {
-    
-  }
-  
-  /* 11h - 2400 up (increase margins) */
-  @media screen and (min-width:2400px) {
-    
-  }
