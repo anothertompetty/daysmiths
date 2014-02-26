@@ -190,7 +190,7 @@ h2, blockquote {
 h2, blockquote {
 	font-style: none;
 	font-size: 22px;
-	line-height: 110%;
+	line-height: 100%;
 	text-transform: uppercase;
 }
 
@@ -200,6 +200,10 @@ h2 {
 
 blockquote {
 	text-align: center;
+}
+
+.item p {
+	line-height: 135%;
 }
 
 p.name {
