@@ -216,8 +216,8 @@ a:link, a:visited, a:hover, a:active {
 	color: #3c3c3c;
 }
 
-header ul a, p a {
-	border-bottom: 1px powderblue solid;
+header ul a {
+	border-bottom: 1px mediumseagreen;
 }
 
 /*mobile styles*/
@@ -262,12 +262,20 @@ header ul {
 
 header ul li {
 	padding: 0;
-	margin-right: 20px;
 	float: left;
 }
 
-header ul li:last-child {
-	margin-right: 0px;
+header ul a {
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms ease-in-out;
+	   -moz-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
+}
+
+header ul a:hover {
+	background-color: #f0f0f0;
 }
 
 img.avatar {
@@ -282,7 +290,7 @@ img.avatar {
 
 blockquote {
 	font-size: 32px;
-	line-height: 120%;
+	line-height: 110%;
 }
 
 .item {
