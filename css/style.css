@@ -111,6 +111,11 @@ img.avatar {
 	margin: 0 auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	text-align: center;
+}
+
+.bio {
+	margin-top: 20px;
 }
 
 section {
@@ -178,6 +183,14 @@ footer {
 	background-color: #fff;
 }
 
+.bio {
+	
+}
+
+.person {
+	cursor: pointer;
+}
+
 /*typography styles*/
 
 h2, blockquote {
@@ -205,10 +218,6 @@ blockquote {
 	line-height: 135%;
 }
 
-p.name {
-	text-align: center;
-}
-
 /*link styles*/
 
 a:link, a:visited, a:hover, a:active {
@@ -218,6 +227,20 @@ a:link, a:visited, a:hover, a:active {
 
 header ul a {
 	border-bottom: 1px mediumseagreen;
+}
+
+.person {
+	/* font-style: italic; */
+	color: #a1a1a1;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease-in-out;
+	   -moz-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
+}
+
+.person:hover {
+	color: #3c3c3c;
 }
 
 /*mobile styles*/

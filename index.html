@@ -40,7 +40,9 @@
 					
 		<blockquote>"Make sure you don't skip the walk &mdash; it's the best part of the day. Don't worry about getting lost, that's sort of the point in doing it in the first place."</blockquote>
 		<hr>
-		<p class="name">This is Tom's day</p>
+		This is <span class="person">Tom's</span> day
+		
+		<p class="bio">We are GlossyRey. We are here to get your job done. Studio based in Novi Sad,Serbia with team assembled for finding the best way to hit creative goal you put before us.Years of experience and satisfied clients have strengthened us as a team and gave us addiction to always stretch for a higher bar. We constantly ache for more. More is what keeps us motivated. More good projects, more creative ideas, more contacts, more skills, more satisfied clients.If you have tasks regarding creative direction, animation, post production or motion design we will always try to give you more. Any thoughts,questions or requests?Say Hello and lets see what we can do for you.</p>
 		
 	</div>
 		
@@ -127,6 +129,26 @@ $(document).ready(function() {
                 $('#menu').slideToggle("600");
         });
     });
+
+</script>
+
+<script type="text/javascript">
+
+// expand & collapse
+
+jQuery(document).ready(function() {
+  jQuery(".bio").hide();
+  
+//toggle the componenet with class msg_body
+  
+  jQuery(".person").click(function()
+  {
+    jQuery(this).next(".bio").slideToggle(500);
+  });
+});
+
+</script>
+
 
 </script>
 
