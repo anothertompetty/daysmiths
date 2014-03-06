@@ -314,6 +314,7 @@ h2, blockquote {
 	font-size: 22px;
 	line-height: 110%;
 	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
 }
 
 h2 {
