@@ -122,33 +122,24 @@
 
 <!--Rationalise JS snippets to same code + hide in snippet + add to boilerplate-->
 
-<!--mobile toggle menu-->
-
 <script>
 
+//mobile menu toggle
+
 $(document).ready(function() {
-        $('#menu-icon').click(function() {
-                $('#menu').slideToggle("600");
-        });
-    });
-
-</script>
-
-<!--bio toggle-->
-
-<script type="text/javascript">
-
-jQuery(document).ready(function() {
-  jQuery(".bio").hide();
-    
-  jQuery(".person").click(function()
-  {
-    jQuery(this).next(".bio").slideToggle(500);
-  });
+	$('#menu-icon').click(function() {
+		$('#menu').slideToggle("600");
+	});
 });
 
-</script>
+//bio toggle
 
+$(document).ready(function() {
+	$(".bio").hide();
+	$(".person").click(function() {
+		$(this).next(".bio").slideToggle(500);
+  	});
+});
 
 </script>
 
