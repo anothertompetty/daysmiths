@@ -130,33 +130,29 @@
 
 <script>
 
-//mobile menu toggle
-
-$(document).ready(function() {
-	$('#menu-icon').click(function() {
-		$('#menu').slideToggle("600");
-	});
-});
-
-//bio toggle
-
-$(document).ready(function() {
-	$(".bio").hide();
-	$(".person").click(function() {
-		$(this).next(".bio").slideToggle(500);
-  	});
-});
-
 //sign-up top
 
 $(".signup").click(signupmenu)
 	function signupmenu() {
 		$(".signupform").slideToggle(500);
 	}
+	
+//mobile menu toggle
+
+$(document).ready(function() {
+	$('#menu-icon').click(function() {
+		$('#menu').slideToggle(500);
+	});
+});
+
+//bio toggle
+
+$(".person").click(biography)
+	function biography() {
+		$(".bio").slideToggle(500);
+	}
 
 </script>
-
-<script src="js/smooth_anchor_snippet.js"></script>		
 						
 </body>
 	

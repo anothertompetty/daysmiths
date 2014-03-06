@@ -185,6 +185,7 @@ img.avatar {
 }
 
 .bio {
+	display: none;
 	margin-top: 20px;
 }
 
