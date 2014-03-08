@@ -330,7 +330,7 @@ footer {
 	background-color: #fff;
 }
 
-.person, .signup {
+.person, .pulldown, p.pullup {
 	cursor: pointer;
 }
 
@@ -366,7 +366,6 @@ blockquote, .why-signup h2 {
 	line-height: 135%;
 }
 
-
 /*link styles*/
 
 a:link, a:visited, a:hover, a:active {
@@ -374,17 +373,30 @@ a:link, a:visited, a:hover, a:active {
 	color: #3c3c3c;
 }
 
-.person {
-	color: #a1a1a1;
-	cursor: pointer;
+.person, p.pullup {
 	-webkit-transition: all 200ms ease-in-out;
 	   -moz-transition: all 200ms ease-in-out;
 	     -o-transition: all 200ms ease-in-out;
 	        transition: all 200ms ease-in-out;
 }
 
+.person {
+	color: #a1a1a1;
+	cursor: pointer;
+}
+
 .person:hover {
 	color: #3c3c3c;
+}
+
+p.pullup {
+	padding-top: 10px;
+	margin: 0 auto;
+	color: rgb(128,227,182);
+}
+
+p.pullup:hover {
+	color: #000;
 }
 
 /*mobile styles*/
@@ -462,7 +474,7 @@ header ul li {
 	float: left;
 }
 
-header ul a, .signup {
+header ul a, .pulldown {
 	padding: 10px;
 	box-sizing: border-box;
 	-webkit-transition: all 200ms ease-in-out;
@@ -471,16 +483,16 @@ header ul a, .signup {
 	        transition: all 200ms ease-in-out;
 }
 
-header ul a:hover, .signup {
+header ul a:hover, .pulldown {
 	background-color: #f0f0f0;
 }
 
-.signup:hover {
+.pulldown:hover {
 	background-color: rgb(98,170,238);
 	color: #fff;
 }
 
-.signup {
+.pulldown {
 	margin-top: -6px;
 	padding-top: 6px;
 	padding-bottom: 6px;
