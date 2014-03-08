@@ -78,6 +78,10 @@ input, input[type=submit]
 	border-radius: 0;
 }
 
+input {
+	height: 30px;
+}
+
 input[type=submit]
 {
 	padding: 10px;
@@ -568,4 +572,113 @@ header ul {
 	margin-bottom: 40px;
 }
 
+}
+
+/*--------------
+
+
+
+
+--------------*/
+
+/*home styles MOBILE*/
+
+/*hero*/
+
+.hero {
+	position: relative;
+	margin-top: 6px;
+	box-sizing: border-box;
+}
+
+.hero-content {
+	position: absolute;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10%;
+	box-sizing: border-box;
+}
+
+h2.hero {
+	font-family: "flood-std", helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 90%;
+	margin-bottom: 30px;
+}
+
+a.button {
+	text-align: center;
+	background-color: tomato;
+	padding: 10px 15px;
+	margin: 0 auto;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+h2.welcome {
+	color: #3c3c3c;
+	font-size: 22px;
+	text-align: center;
+	padding: 60px 0px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+/*sign up*/
+
+.home-signup {
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #3c3c3c;
+	color: #fff;
+	text-align: center;
+}
+
+/*Home 640 up*/
+@media only screen and (min-width:640px) {
+
+.hero {
+	margin-top: 20px;
+}
+
+.hero-content {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 10%;
+}
+
+h2.hero {
+	font-size: 120px;
+	line-height: 85%;
+	margin-bottom: 40px;
+}
+
+h2.welcome {
+	font-size: 22px;
+	padding: 30px 0px;
+	margin: 0 auto;
+}
+
+/*home signup/form styles*/
+
+#mc_embed_signup-main {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.email-home, .submit-home {
+	display: inline-block;
+}
+
+.email-home {
+	margin-right: 20px;
+}
+	
 }
