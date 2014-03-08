@@ -42,15 +42,66 @@ img a
 	text-decoration: none;
 }
 
-/*layout styles*/
+/*sign up form*/
 
 .signupform {
 	display: none;
-	height: 200px;
-	background-color: #3c3c3c; 
+	background-color: #3c3c3c;
+	box-sizing: border-box;
+	padding: 20px 20px 10px 20px; 
 }
 
-#container {
+#mc_embed_signup {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+input, input[type=submit]
+{
+	font-family: "minion-pro",times, georgia, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+	height: 25px;
+	width: 100%;
+	padding: 10px 0px;
+	margin: 10px 0px;
+	background-color: none;
+	color: #3C3C3C;
+	-webkit-appearance: none;
+	border: 0px;
+	border-radius: 0;
+}
+
+input[type=submit]
+{
+	padding: 10px;
+	background-color: rgb(128,227,182);
+	text-align: center;
+	color: #fff;
+	height: 50px;
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	   -moz-transition: background-color 0.2s ease-in-out;
+	     -o-transition: background-color 0.2s ease-in-out;
+	        transition: background-color 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+	background-color: #000;
+}
+
+/*layout styles*/
+
+.container {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
@@ -157,6 +208,14 @@ img.avatar {
             animation: fadeinup 1.5s;
 }
 
+.quote hr {
+	width: 40px;
+	border: 0;
+	border-bottom: 1px #3c3c3c solid;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
 /* quote fly up */
 
 @keyframes fadeinup {
@@ -220,26 +279,19 @@ section {
     to   { opacity: 1;}
 }
 
-@-o-keyframes fadeindown {
+@-o-keyframes fadein {
     from { opacity: 0;}
     to   { opacity: 1;}
 }
 
 .item {
 	position: relative;
-	padding: 60px 10px;
+	padding: 60px 20px;
 	background-color: #000;
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-}
-
-.item p {
-	text-align: center;
-	width: 75%;
-	margin: 0 auto;
-	color: #fff;
 }
 
 .first {
@@ -272,14 +324,6 @@ hr {
 	border-bottom: 1px white solid;
 }
 
-.quote hr {
-	width: 40px;
-	border: 0;
-	border-bottom: 1px #3c3c3c solid;
-	margin-top: 20px;
-	margin-bottom: 15px;
-}
-
 footer {
 	text-align: center;
 	color: #3c3c3c;
@@ -290,14 +334,9 @@ footer {
 	cursor: pointer;
 }
 
-.signup {
-	padding: ;
-	margin-top: ;
-}
-
 /*typography styles*/
 
-h2, blockquote {
+h2, blockquote, .why-signup h2 {
 	font-family: "futura-pt", helvetica, arial, sans-serif;
 	font-style: normal;
 	font-weight: 700;
@@ -311,17 +350,22 @@ h2, blockquote {
 	text-rendering: optimizeLegibility;
 }
 
-h2 {
+h2, .why-signup h2 {
 	color: #fff;
 }
 
-blockquote {
+blockquote, .why-signup h2 {
 	text-align: center;
 }
 
-.item p {
+.item p, .why-signup p {
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	color: #fff;
 	line-height: 135%;
 }
+
 
 /*link styles*/
 
@@ -347,6 +391,36 @@ a:link, a:visited, a:hover, a:active {
 
 /*640 up*/
 @media only screen and (min-width:640px) {
+
+/*sign up form*/
+
+.why-signup {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	margin-left: 17px;
+	margin-right: 64px;
+}
+
+.why-signup p, .why-signup h2 {
+	text-align: left;
+	margin: 0px;
+	width: auto;
+}
+
+#mc_embed_signup {
+	position: relative;
+	width: 50%;
+	display: inline-block;
+	margin-top: 0px;
+}
+	
+input, input[type=submit] {
+	display: inline-block;
+	width: 300px;
+}
+
+/*header styles*/
 
 header {
 	background-color: transparent;
@@ -397,8 +471,13 @@ header ul a, .signup {
 	        transition: all 200ms ease-in-out;
 }
 
-header ul a:hover, .signup:hover {
+header ul a:hover, .signup {
 	background-color: #f0f0f0;
+}
+
+.signup:hover {
+	background-color: rgb(98,170,238);
+	color: #fff;
 }
 
 .signup {
@@ -406,6 +485,8 @@ header ul a:hover, .signup:hover {
 	padding-top: 6px;
 	padding-bottom: 6px;
 }
+
+/*body styles*/
 
 img.avatar {
 	margin-top: 0px;
@@ -425,7 +506,7 @@ blockquote {
 .item {
 	width: 480px;
 	margin: 0 auto;
-	padding: 120px 0px;
+	padding: 120px 20px;
 }
 
 footer {
@@ -447,9 +528,13 @@ footer {
 /* 960 up */
  @media screen and (min-width:960px) {
 
-#container {
+/*fixing container*/
+
+.container {
 	width: 960px;
 }
+
+/*clearing excess padding for header edges*/
 
 .logo {
 	margin-left: 0px;
@@ -459,29 +544,16 @@ header ul {
 	margin-right: 0px;
 }
 
+/*increasing padding for screen size*/
+
 .item {
 	display: inline-block;
 	float: left;
-	padding: 180px 0px;
+	padding: 180px 40px;
 }
 
 .item.last {
 	margin-bottom: 40px;
 }
 
-}
-  
-/* 1600 up */
- @media screen and (min-width:1600px) {
-
-}
-
-/* 11g - 2000 up (increase base font size) */
-@media screen and (min-width:2000px) {
-    
-}
-  
-/* 11h - 2400 up (increase margins) */
-@media screen and (min-width:2400px) {
-    
 }
