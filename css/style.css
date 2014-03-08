@@ -212,14 +212,6 @@ img.avatar {
             animation: fadeinup 1.5s;
 }
 
-.quote hr {
-	width: 40px;
-	border: 0;
-	border-bottom: 1px #3c3c3c solid;
-	margin-top: 20px;
-	margin-bottom: 15px;
-}
-
 /* quote fly up */
 
 @keyframes fadeinup {
@@ -245,6 +237,14 @@ img.avatar {
 @-o-keyframes fadeinup {
     from { opacity: 0; -o-transform: translateY(30px);}
     to   { opacity: 1; -o-transform: translateY(0);}
+}
+
+.quote hr {
+	width: 40px;
+	border: 0;
+	border-bottom: 1px #3c3c3c solid;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 .bio {
@@ -608,15 +608,25 @@ h2.hero {
 	font-size: 48px;
 	line-height: 90%;
 	margin-bottom: 30px;
+	-webkit-animation: fadeindown 1.25s;
+       -moz-animation: fadeindown 1.25s; 
+        -ms-animation: fadeindown 1.25s; 
+         -o-animation: fadeindown 1.25s; 
+            animation: fadeindown 1.25s;
 }
 
 a.button {
 	text-align: center;
-	background-color: tomato;
+	background-color: rgb(235,164,130);
 	padding: 10px 15px;
 	margin: 0 auto;
 	color: #fff;
 	box-sizing: border-box;
+	-webkit-animation: fadeinup 1.5s;
+       -moz-animation: fadeinup 1.5s; 
+        -ms-animation: fadeinup 1.5s; 
+         -o-animation: fadeinup 1.5s; 
+            animation: fadeinup 1.5s;
 }
 
 h2.welcome {
@@ -632,8 +642,9 @@ h2.welcome {
 
 .home-signup {
 	width: 100%;
+	margin-top: -7px;
 	margin-bottom: 40px;
-	padding: 20px;
+	padding: 40px 20px 20px 20px;
 	box-sizing: border-box;
 	background-color: #3c3c3c;
 	color: #fff;
@@ -664,6 +675,11 @@ h2.welcome {
 	font-size: 22px;
 	padding: 30px 0px;
 	margin: 0 auto;
+}
+
+.home-signup {
+	padding-top: 20px;
+	margin-top: 17px;
 }
 	
 }
