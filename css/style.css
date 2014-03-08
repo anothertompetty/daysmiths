@@ -487,7 +487,7 @@ header ul a, .pulldown {
 	        transition: all 200ms ease-in-out;
 }
 
-header ul a:hover, .pulldown {
+header ul a:hover {
 	background-color: #f0f0f0;
 }
 
@@ -655,7 +655,7 @@ h2.welcome {
 }
 
 h2.hero {
-	font-size: 120px;
+	font-size: 72px;
 	line-height: 85%;
 	margin-bottom: 40px;
 }
@@ -665,7 +665,18 @@ h2.welcome {
 	padding: 30px 0px;
 	margin: 0 auto;
 }
+	
+}
 
+/*Home 830 up*/
+@media only screen and (min-width:830px) {
+	
+	h2.hero {
+		font-size: 120px;
+		line-height: 85%;
+		margin-bottom: 40px;
+	}
+	
 /*home signup/form styles*/
 
 #mc_embed_signup-main {
