@@ -291,7 +291,7 @@ section {
 .item {
 	position: relative;
 	padding: 60px 20px;
-	background-color: #000;
+	background-color: transparent;
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -588,6 +588,7 @@ header ul {
 .hero {
 	position: relative;
 	margin-top: 6px;
+	margin-bottom: 20px;
 	box-sizing: border-box;
 }
 
@@ -622,33 +623,35 @@ a.button {
 	margin: 0 auto;
 	color: #fff;
 	box-sizing: border-box;
+	-webkit-transition: all 200ms ease-in-out;
+	   -moz-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
 	-webkit-animation: fadeinup 1.5s;
        -moz-animation: fadeinup 1.5s; 
         -ms-animation: fadeinup 1.5s; 
          -o-animation: fadeinup 1.5s; 
             animation: fadeinup 1.5s;
+
 }
 
-h2.welcome {
-	color: #3c3c3c;
-	font-size: 22px;
-	text-align: center;
-	padding: 60px 0px;
-	width: 75%;
-	margin: 0 auto;
-}
-
-/*sign up*/
-
-.home-signup {
-	width: 100%;
-	margin-top: -7px;
-	margin-bottom: 40px;
-	padding: 40px 20px 15px 20px;
-	box-sizing: border-box;
+a.button:hover {
 	background-color: #3c3c3c;
-	color: #fff;
-	text-align: center;
+}
+
+h2.dark {
+	color: #3c3c3c;
+}
+
+.older {
+	-webkit-transition: all 200ms ease-in-out;
+	   -moz-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
+}
+
+.older:hover {
+	background-color: #f0f0f0;
 }
 
 /*Home 640 up*/
@@ -669,12 +672,6 @@ h2.hero {
 	font-size: 72px;
 	line-height: 85%;
 	margin-bottom: 40px;
-}
-
-h2.welcome {
-	font-size: 22px;
-	padding: 30px 0px;
-	margin: 0 auto;
 }
 	
 }
