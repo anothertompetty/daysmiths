@@ -1,162 +1,39 @@
-<!DOCTYPE HTML>
-
-<head>
-
-<title>Daysmiths | Andrew's Day</title>
-
-<meta name="description" content="The portfolio of Tom Petty, a London based designer." />
-<meta name="author" content="Tom Petty - @tp">
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="//use.typekit.net/jrj4dnp.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		
-</head>
+---
+layout: default
+---
 	
-<body>
+<div class="hero">
 	
-	<div class="signupform">
+	<div class="hero-content">
 		
-		<div class="container">
+		<h2 class="hero">David's<br>day</h2>
 		
-		<div class="why-signup">
+		<a href="tom.html" class="button">View now</a>
 			
-			<h2>Your day, made</h2>
+	</div>
+		
+	<img src="img/home/hero.jpg">
+		
+</div>
+				
+<section>
+				
+	<div class="item older">
+						
+		<h2 class="dark">Tom's day</h2><hr style="border-bottom: 1px #3c3c3c solid"	>
+						
+		<p style="color: #3c3c3c">Start with a flat white at Fix 126 on Curtain Road, Shoreditch</p>
 			
-			<p>Get a new day each week straight into your inbox. Nothing more, nothing less.</p>
-			<p class="signup pullup">Close</p>
+	</div>
 		
-		</div>
-		
-		<div id="mc_embed_signup">
-		
-		<form action="http://daysmiths.us3.list-manage1.com/subscribe/post" method="POST">
+	<div class="item older last">
+						
+		<h2 class="dark">Camilla's day</h2><hr style="border-bottom: 1px #3c3c3c solid">
+						
+		<p style="color: #3c3c3c">Head to Lambs Conduit Street for some shopping <span class="button">Guide</span></p>
 			
-			<input type="hidden" name="u" value="7764fe402deb87e43f015ac20">
-			<input type="hidden" name="id" value="48bde8926a">
-
-		    <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="example@email.com">
-
-			<!-- real people should not fill this in and expect good things -->
-			<div style="position: absolute; left: -5000px;">
-				<input type="text" name="b_7764fe402deb87e43f015ac20_48bde8926a" value="">
-			</div>
-
-			<div class="submit_container">
-				<input type="submit" class="button" name="submit" value="Sign up">
-			</div>
-		
-		</form>
-		
-		</div>
-		
-		</div>
-		
 	</div>
 	
-<div class="container">
-		
-	<header>
-		
-		<a href="index.html" class="logo">Daysmiths</a>
-		
-		<a href="#" id="menu-icon">Menu</a>
-		
-		<ul id="menu">
-			<li><a href="/">View all</a></li>
-			<li><a href="/">About</a></li>
-			<li class="signup pulldown">Sign up</li>
-		</ul>
-				
-	</header>
-	
-	<div class="hero">
-		
-		<div class="hero-content">
-		
-			<h2 class="hero">David's<br>day</h2>
-		
-			<a href="tom.html" class="button">View now</a>
-			
-		</div>
-		
-		<img src="img/home/hero.jpg">
-		
-	</div>
-				
-	<section>
-				
-		<div class="item older">
-						
-			<h2 class="dark">Tom's day</h2><hr style="border-bottom: 1px #3c3c3c solid"	>
-						
-			<p style="color: #3c3c3c">Start with a flat white at Fix 126 on Curtain Road, Shoreditch</p>
-			
-		</div>
-		
-		<div class="item older last">
-						
-			<h2 class="dark">Camilla's day</h2><hr style="border-bottom: 1px #3c3c3c solid">
-						
-			<p style="color: #3c3c3c">Head to Lambs Conduit Street for some shopping <span class="button">Guide</span></p>
-			
-		</div>
-	
-	</section>
+</section>
 	
 </div>
-
-<!--Rationalise JS snippets to same code + hide in snippet + add to boilerplate-->
-
-<script>
-
-//sign-up top
-
-$(".signup").click(signupmenu)
-	function signupmenu() {
-		$(".signupform").slideToggle(500, "swing");
-	}
-	
-//mobile menu toggle
-
-$(document).ready(function() {
-	$('#menu-icon').click(function() {
-		$('#menu').slideToggle(500);
-	});
-});
-
-//bio toggle
-
-$(".person").click(biography)
-	function biography() {
-		$(".bio").slideToggle(500);
-	}
-	
-// smooth anchor scrolling
-
-$(function() {
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-	        
-				$('html,body').animate({
-					scrollTop: target.offset().top
-					}, 500);
-					return false;
-	      }
-	    }
-	  });
-	});
-
-</script>
-						
-</body>
-	
-</html>
