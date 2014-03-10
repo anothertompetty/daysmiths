@@ -676,11 +676,6 @@ h2.welcome {
 	padding: 30px 0px;
 	margin: 0 auto;
 }
-
-.home-signup {
-	padding-top: 20px;
-	margin-top: 17px;
-}
 	
 }
 
@@ -692,20 +687,5 @@ h2.welcome {
 		line-height: 85%;
 		margin-bottom: 40px;
 	}
-	
-/*home signup/form styles*/
-
-#mc_embed_signup-main {
-	display: inline-block;
-	margin-top: 10px;
-}
-
-.email-home, .submit-home {
-	display: inline-block;
-}
-
-.email-home {
-	margin-right: 20px;
-}
 	
 }
