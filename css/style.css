@@ -353,12 +353,9 @@ h2, blockquote {
 	text-rendering: optimizeLegibility;
 }
 
-h2 {
+h2, .why-signup h2 {
 	font-weight: 900;
 	text-transform: uppercase;
-}
-
-h2, .why-signup h2 {
 	color: #fff;
 }
 
@@ -579,21 +576,6 @@ header ul {
 
 .item.last {
 	margin-bottom: 40px;
-}
-
-.quote {
-	width: 640px;
-}
-
-blockquote {
-	font-size: 48px;
-	line-height: 110%;
-}
-
-.bio {
-	width: 480px;
-	margin: 0 auto;
-	margin-top: 20px;
 }
 
 }
