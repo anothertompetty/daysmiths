@@ -341,21 +341,30 @@ footer {
 /*typography styles*/
 
 h2, blockquote, .why-signup h2 {
-	font-family: "futura-pt", helvetica, arial, sans-serif;
+	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 h2, blockquote {
 	font-style: none;
 	font-size: 22px;
 	line-height: 110%;
-	text-transform: uppercase;
 	text-rendering: optimizeLegibility;
+}
+
+h2 {
+	font-weight: 900;
+	text-transform: uppercase;
 }
 
 h2, .why-signup h2 {
 	color: #fff;
+}
+
+blockquote {
+	font-size: 28px;
+	line-height: 120%;
 }
 
 blockquote, .why-signup h2 {
@@ -515,7 +524,7 @@ img.avatar {
 }
 
 blockquote {
-	font-size: 32px;
+	font-size: 36px;
 	line-height: 110%;
 }
 
@@ -572,6 +581,21 @@ header ul {
 	margin-bottom: 40px;
 }
 
+.quote {
+	width: 640px;
+}
+
+blockquote {
+	font-size: 48px;
+	line-height: 110%;
+}
+
+.bio {
+	width: 480px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
 }
 
 /*--------------
@@ -588,7 +612,6 @@ header ul {
 .hero {
 	position: relative;
 	margin-top: 6px;
-	margin-bottom: 20px;
 	box-sizing: border-box;
 }
 
@@ -641,6 +664,12 @@ a.button:hover {
 
 h2.dark {
 	color: #3c3c3c;
+}
+
+.previous-days {
+	position: relative;
+	margin-top: 70px;
+	border-top: 1px #3c3c3c solid;
 }
 
 .older {
