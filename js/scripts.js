@@ -1,10 +1,11 @@
 //change opacity of previous days on hover
 
-$(".previous-days").hover(function(){
-        $(".prev-image").css({ opacity: 1});
+$(".previous-days").hover(function() {
+	$(".prev-image").css({ opacity: 1});
 },
-function(){
-        $(".prev-image").css({ opacity: 0.5 });
+
+function() {
+	$(".prev-image").css({ opacity: 0.5 });
 });
 
 //sign-up top
