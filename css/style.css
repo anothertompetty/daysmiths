@@ -648,8 +648,11 @@ h2.dark {
 	color: #3c3c3c;
 }
 
-.previous-days { /*section replacement*/
+.previous-days, .previous-days-top { /*section replacement*/
 	position: relative;
+	margin-top: 20px;
+}
+.previous-days-top {
 	margin-top: 70px;
 }
 
@@ -662,6 +665,10 @@ h2.dark {
 	padding: 0px;
 	margin-bottom: -8px; /*fixing weird gap between image and copy for mobile*/	
 	opacity: 0.5;
+	-webkit-transition: all 200ms ease-in-out; /*fades in image opacity on hover (see js)*/
+	   -moz-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
 }
 
 .prev-image img {
@@ -670,10 +677,6 @@ h2.dark {
 
 .older { /*item class for content*/
 	background-color: #f0f0f0;
-	-webkit-transition: all 200ms ease-in-out;
-	   -moz-transition: all 200ms ease-in-out;
-	     -o-transition: all 200ms ease-in-out;
-	        transition: all 200ms ease-in-out;
 }
 
 /*Home 640 up*/
