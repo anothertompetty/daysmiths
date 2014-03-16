@@ -724,11 +724,11 @@ h2.dark {
 	color: #3c3c3c;
 }
 
-.previous-days, .previous-days-top { /*section replacement*/
+.previous-days { /*section replacement*/
 	position: relative;
 	margin-top: 20px;
 }
-.previous-days-top {
+.top-day {
 	margin-top: 70px;
 }
 
@@ -749,6 +749,10 @@ h2.dark {
 
 .prev-image img {
 	width: 100%;
+}
+
+.previous-days:hover .prev-image {
+	opacity: 1.0;
 }
 
 .older { /*item class for content*/
