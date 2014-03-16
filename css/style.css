@@ -293,6 +293,7 @@ section {
 	padding: 60px 20px;
 	background-color: transparent;
 	width: 100%;
+	overflow: hidden;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -320,6 +321,22 @@ section {
 
 .sixth {
 	background-color: rgb(237,176,167);
+}
+
+/*Action button hover states etc.*/
+
+.action a {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px 15px;
+	border: 3px #fff solid;
+	text-transform: uppercase;
+}
+
+.item {
+	height: 310px;
 }
 
 hr {
@@ -383,7 +400,17 @@ a:link, a:visited, a:hover, a:active {
 	color: #3c3c3c;
 }
 
-.person, p.pullup {
+.action a:link, .action a:visited, .action a:hover, .action a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+.action a:hover {
+	background-color: #fff;
+	color: #3c3c3c;
+}
+
+.person, p.pullup, .action a {
 	-webkit-transition: all 200ms ease-in-out;
 	   -moz-transition: all 200ms ease-in-out;
 	     -o-transition: all 200ms ease-in-out;
@@ -408,6 +435,7 @@ p.pullup {
 p.pullup:hover {
 	color: #000;
 }
+
 
 /*mobile styles*/
 
@@ -531,6 +559,29 @@ blockquote {
 	padding: 120px 20px;
 }
 
+/*fadein button*/
+
+.action {
+	display: none;
+}
+
+.action a {
+	margin-top: 40px;
+}
+
+.item {
+	height: 392px;
+}
+
+.item:hover .action {  
+	display: block;
+	-webkit-animation: fadein 1s;
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+}
+
 footer {
 	position: fixed;
 	padding: 0;
@@ -576,6 +627,31 @@ header ul {
 
 .item.last {
 	margin-bottom: 40px;
+}
+
+/*day button fade in and hover etc.*/
+
+/*fadein button*/
+
+.action {
+	display: none;
+}
+
+.action a {
+	margin-top: 40px;
+}
+
+.item {
+	height: 486px;
+}
+
+.item:hover .action {  
+	display: block;
+	-webkit-animation: fadein 1s;
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
 }
 
 }
