@@ -689,7 +689,7 @@ h2.hero {
 	font-weight: 400;
 	font-size: 48px;
 	line-height: 90%;
-	margin-bottom: 30px;
+	margin-bottom: 20px; /*making it all fit in the box*/
 	-webkit-animation: fadeindown 1.25s;
        -moz-animation: fadeindown 1.25s; 
         -ms-animation: fadeindown 1.25s; 
@@ -700,7 +700,7 @@ h2.hero {
 a.button {
 	text-align: center;
 	background-color: rgb(235,164,130);
-	padding: 10px 15px;
+	padding: 7px 12px;
 	margin: 0 auto;
 	color: #fff;
 	box-sizing: border-box;
@@ -774,9 +774,13 @@ h2.dark {
 }
 
 h2.hero {
-	font-size: 72px;
+	font-size: 96px;
 	line-height: 85%;
 	margin-bottom: 40px;
+}
+
+a.button {
+	padding: 10px 15px;
 }
 
 .prev-image {
@@ -792,19 +796,18 @@ h2.hero {
 	
 }
 
-/*Home 830 up*/
-@media only screen and (min-width:830px) {
+/*Home 960 up*/
+@media only screen and (min-width:960px) {
+
+.hero-content {
+	margin-top: 12%;
+}
 	
 h2.hero {
 	font-size: 120px;
 	line-height: 85%;
 	margin-bottom: 40px;
 }
-		
-}
-
-/*Home 960 up*/
-@media only screen and (min-width:960px) {
 
 .prev-image {
 	float: left;
