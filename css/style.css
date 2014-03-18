@@ -683,24 +683,6 @@ header ul {
             animation: fadeindown 1.25s;
 }
 
-/* .hero-content {
-	text-align: center;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 10%;
-	box-sizing: border-box; */
-}
-
-h2.hero {
-	font-family: "flood-std", helvetica, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 48px;
-	line-height: 90%;
-	margin-bottom: 20px; /*making it all fit in the box*/
-}
-
 a.button {
 	text-align: center;
 	background-color: rgb(235,164,130);
@@ -771,25 +753,13 @@ h2.dark {
 @media only screen and (min-width:640px) {
 
 .hero {
-	margin-top: 20px;
-}
-
-.hero-content {
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 10%;
-}
-
-h2.hero {
-	font-size: 96px;
-	line-height: 85%;
-	margin-bottom: 40px;
+	margin-top: 60px;
 }
 
 a.button {
 	padding: 10px 15px;
 	width: 17%;
+	min-width: 105px;
 }
 
 .prev-image {
@@ -809,16 +779,6 @@ a.button {
 /*Home 960 up*/
 @media only screen and (min-width:960px) {
 
-.hero-content {
-	margin-top: 12%;
-}
-	
-h2.hero {
-	font-size: 120px;
-	line-height: 85%;
-	margin-bottom: 40px;
-}
-
 .prev-image {
 	float: left;
 	margin-bottom: 0px; /*removing correction for gap between two on mobile*/
@@ -826,6 +786,7 @@ h2.hero {
 
 a.button {
 	width: 15%;
+	max-width: 130px;
 }
 
 }
