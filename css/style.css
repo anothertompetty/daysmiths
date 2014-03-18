@@ -669,18 +669,27 @@ header ul {
 
 .hero {
 	position: relative;
-	margin-top: 6px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 60px;
 	box-sizing: border-box;
 }
 
-.hero-content {
-	position: absolute;
+.hero img {
+	-webkit-animation: fadeindown 1.25s;
+       -moz-animation: fadeindown 1.25s; 
+        -ms-animation: fadeindown 1.25s; 
+         -o-animation: fadeindown 1.25s; 
+            animation: fadeindown 1.25s;
+}
+
+/* .hero-content {
 	text-align: center;
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 10%;
-	box-sizing: border-box;
+	box-sizing: border-box; */
 }
 
 h2.hero {
@@ -690,11 +699,6 @@ h2.hero {
 	font-size: 48px;
 	line-height: 90%;
 	margin-bottom: 20px; /*making it all fit in the box*/
-	-webkit-animation: fadeindown 1.25s;
-       -moz-animation: fadeindown 1.25s; 
-        -ms-animation: fadeindown 1.25s; 
-         -o-animation: fadeindown 1.25s; 
-            animation: fadeindown 1.25s;
 }
 
 a.button {
@@ -702,7 +706,10 @@ a.button {
 	background-color: rgb(235,164,130);
 	padding: 7px 12px;
 	margin: 0 auto;
+	margin-top: 20px;
+	width: auto;
 	color: #fff;
+	display: block;
 	box-sizing: border-box;
 	-webkit-transition: all 200ms ease-in-out;
 	   -moz-transition: all 200ms ease-in-out;
@@ -755,8 +762,9 @@ h2.dark {
 	opacity: 1.0;
 }
 
-.older { /*item class for content*/
+.older { /*'item' class for home content*/
 	background-color: #f0f0f0;
+	height: 234px;
 }
 
 /*Home 640 up*/
@@ -781,6 +789,7 @@ h2.hero {
 
 a.button {
 	padding: 10px 15px;
+	width: 17%;
 }
 
 .prev-image {
@@ -792,6 +801,7 @@ a.button {
 
 .older {
 	padding: 198px 20px;
+	height: auto;
 }
 	
 }
@@ -812,6 +822,10 @@ h2.hero {
 .prev-image {
 	float: left;
 	margin-bottom: 0px; /*removing correction for gap between two on mobile*/
+}
+
+a.button {
+	width: 15%;
 }
 
 }
