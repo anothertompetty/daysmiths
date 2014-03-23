@@ -364,20 +364,20 @@ hr {
 
 /*typography styles*/
 
-h2, blockquote, .why-signup h2 {
+h2, blockquote, .why-signup h2, .handshake h3 {
 	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }
 
-h2, blockquote {
+h2, blockquote, .handshake h3 {
 	font-style: none;
 	font-size: 22px;
 	line-height: 110%;
 	text-rendering: optimizeLegibility;
 }
 
-h2, .why-signup h2 {
+h2, .why-signup h2, .handshake h3 {
 	font-weight: 900;
 	text-transform: uppercase;
 	color: #fff;
@@ -702,6 +702,23 @@ a.button:hover {
 	background-color: #3c3c3c;
 }
 
+.handshake {
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: rgb(147,233,196);
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.handshake h3 {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/*previous days section*/
+
 h2.dark {
 	color: #3c3c3c;
 }
@@ -710,8 +727,9 @@ h2.dark {
 	position: relative;
 	margin-top: 20px;
 }
+
 .top-day {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
 .prev-image {
@@ -755,6 +773,19 @@ a.button {
 	min-width: 105px;
 }
 
+.top-day {
+	margin-top: 40px;
+}
+
+.handshake {
+	width: 80%;
+	padding: 20px;
+	margin-top: 40px;
+	background-color: rgb(147,233,196);
+	text-align: center;
+	box-sizing: border-box;
+}
+
 .prev-image {
 	width: 480px;
 	height: auto; /*correcting image cropping from mob version*/
@@ -780,6 +811,15 @@ a.button {
 a.button {
 	width: 15%;
 	max-width: 130px;
+}
+
+.handshake {
+	width: 100%;
+	padding: 20px;
+	margin-top: 40px;
+	background-color: rgb(147,233,196);
+	text-align: center;
+	box-sizing: border-box;
 }
 
 }
