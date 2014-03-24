@@ -444,7 +444,7 @@ p.pullup:hover {
 }
 
 
-/*mobile styles*/
+/*non-mobile styles*/
 
 /*640 up*/
 @media only screen and (min-width:640px) {
@@ -541,6 +541,26 @@ header ul a:hover {
 	margin-top: -6px;
 	padding-top: 6px;
 	padding-bottom: 6px;
+}
+
+.prev, .next {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 79px;
+	background: url('../img/arrows.png') left center no-repeat;
+	background-position: 30px center;
+	text-indent: -9000px;
+	z-index: 100;
+}
+
+.prev {
+	left: 0px;
+}
+
+.next {
+	right: 0px;
+	background-position: -30px center;
 }
 
 /*body styles*/
