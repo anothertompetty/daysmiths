@@ -552,6 +552,7 @@ header ul a:hover {
 	background-position: 30px center;
 	text-indent: -9000px;
 	z-index: 100;
+	-webkit-transition: all .3s;
 }
 
 .prev {
@@ -561,6 +562,14 @@ header ul a:hover {
 .next {
 	right: 0px;
 	background-position: -30px center;
+}
+
+.prev:hover {
+	left: -10px;
+}
+
+.next:hover {
+	right: -10px;
 }
 
 /*body styles*/
