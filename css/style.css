@@ -136,7 +136,7 @@ header {
 	left: auto;
 	right: 20px;
 	top: 20px;
-	background-image: url('hamburger.svg');
+	background-image: url('../img/assets/hamburger.svg');
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 }
@@ -161,7 +161,7 @@ header ul li {
 	display: block;
 	margin: 0 auto;
 	top: 4px;
-	background-image: url('logo.svg');
+	background-image: url('../img/assets/logo.svg');
 	background-repeat: no-repeat;
 	background-position-y: 14px;
 	background-position-x: 11px;
@@ -548,7 +548,7 @@ header ul a:hover {
 	top: 0;
 	height: 100%;
 	width: 79px;
-	background: url('../img/arrows.png') left center no-repeat;
+	background: url('../img/assets/arrows.png') left center no-repeat;
 	background-position: 30px center;
 	text-indent: -9000px;
 	z-index: 100;
