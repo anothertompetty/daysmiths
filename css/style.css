@@ -714,7 +714,7 @@ footer {
 
 --------------*/
 
-/*home styles MOBILE*/
+/*about styles MOBILE*/
 
 /*hero*/
 
@@ -726,96 +726,29 @@ footer {
 	box-sizing: border-box;
 }
 
-.hero img {
-	-webkit-animation: fadeindown 1.25s;
-       -moz-animation: fadeindown 1.25s; 
-        -ms-animation: fadeindown 1.25s; 
-         -o-animation: fadeindown 1.25s; 
-            animation: fadeindown 1.25s;
-}
-
-a.button {
-	text-align: center;
-	background-color: rgb(235,164,130);
-	padding: 7px 12px;
+#gradient {
+	width: 100%;
 	margin: 0 auto;
-	margin-top: 20px;
-	width: auto;
-	color: #fff;
-	display: block;
-	box-sizing: border-box;
-	-webkit-transition: all 200ms ease-in-out;
-	   -moz-transition: all 200ms ease-in-out;
-	     -o-transition: all 200ms ease-in-out;
-	        transition: all 200ms ease-in-out;
-	-webkit-animation: fadeinup 1.5s;
-       -moz-animation: fadeinup 1.5s; 
-        -ms-animation: fadeinup 1.5s; 
-         -o-animation: fadeinup 1.5s; 
-            animation: fadeinup 1.5s;
-
-}
-
-a.button:hover {
-	background-color: #3c3c3c;
-}
-
-.handshake {
-	width: 100%;
-	padding: 20px;
-	margin: 0 auto;
-	margin-top: 40px;
-	background-color: rgb(147,233,196);
+	padding: 60px 0px;
+	font-family: "flood-std",sans-serif;
+	font-weight: 400;
 	text-align: center;
-	box-sizing: border-box;
+	color: rgb(98,170,238);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#5caaf0), color-stop(49%,#93e8c2), color-stop(80%,#eeb1a7));
+	background: -webkit-linear-gradient(left, #5caaf0 0%,#93e8c2 49%,#eeb1a7 80%); 
+	-webkit-background-clip: text; /*filling only text w/gradient*/
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: glint 2.5s infinite;
+	-webkit-animation-direction: alternate-reverse; /*sending it back and forward*/
 }
 
-.handshake h3 {
-	color: #fff;
-	text-transform: uppercase;
-}
-
-/*previous days section*/
-
-h2.dark {
-	color: #3c3c3c;
-}
-
-.previous-days { /*section replacement*/
-	position: relative;
-	margin-top: 20px;
-}
-
-.top-day {
-	margin-top: 20px;
-}
-
-.prev-image {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	height: 235px; /*cropping height for mobile*/
-	overflow: hidden;
-	padding: 0px;
-	margin-bottom: -8px; /*fixing weird gap between image and copy for mobile*/	
-	opacity: 0.5;
-	-webkit-transition: all 200ms ease-in-out; /*fades in image opacity on hover (see js)*/
-	   -moz-transition: all 200ms ease-in-out;
-	     -o-transition: all 200ms ease-in-out;
-	        transition: all 200ms ease-in-out;
-}
-
-.prev-image img {
-	width: 100%;
-}
-
-.previous-days:hover .prev-image {
-	opacity: 1.0;
-}
-
-.older { /*'item' class for home content*/
-	background-color: #f0f0f0;
-	height: 234px;
+@-webkit-keyframes glint { 
+	0% { 
+		background-size: 250% auto;
+	} 
+	100% { 
+		background-size: 100% auto;
+	} 
 }
 
 /*Home 640 up*/
@@ -825,59 +758,10 @@ h2.dark {
 	margin-top: 60px;
 }
 
-a.button {
-	padding: 10px 15px;
-	width: 17%;
-	min-width: 105px;
-}
-
-.top-day {
-	margin-top: 40px;
-}
-
-.handshake {
-	width: 80%;
-	padding: 20px;
-	margin-top: 40px;
-	background-color: rgb(147,233,196);
-	text-align: center;
-	box-sizing: border-box;
-}
-
-.prev-image {
-	width: 480px;
-	height: auto; /*correcting image cropping from mob version*/
-	overflow: auto;
-	margin-bottom: -15px; /*bottom margin on pic*/
-}
-
-.older {
-	padding: 198px 20px;
-	height: auto;
-}
-	
 }
 
 /*Home 960 up*/
 @media only screen and (min-width:960px) {
 
-.prev-image {
-	float: left;
-	margin-bottom: 0px; /*removing correction for gap between two on mobile*/
-}
-
-a.button {
-	width: 15%;
-	max-width: 130px;
-}
-
-.handshake {
-	width: 100%;
-	padding: 20px;
-	margin-top: 40px;
-	background-color: rgb(147,233,196);
-	text-align: center;
-	box-sizing: border-box;
-}
 
 }

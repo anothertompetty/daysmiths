@@ -1,3 +1,7 @@
+//fittext
+
+$(".gradient").fitText();
+
 //sign-up top
 
 $(".signup").click(signupmenu)
