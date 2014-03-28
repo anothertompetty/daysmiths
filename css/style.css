@@ -699,6 +699,12 @@ header ul {
             animation: fadein 1s;
 }
 
+footer {
+	position: relative;
+	bottom: 0px;
+	height: auto;
+}
+
 }
 
 /*--------------
