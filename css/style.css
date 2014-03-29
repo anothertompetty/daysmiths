@@ -784,8 +784,9 @@ p.about {
 }
 
 .get-started a:hover {
-	background-color: #3c3c3c;
-	color: rgb(128,227,182);
+	/*background-color: #3c3c3c;*/
+	color: rgb(98,170,238);
+	border-color: rgb(128,227,182);
 }
 
 .get-started{
