@@ -601,10 +601,12 @@ header ul a:hover {
 
 .prev:hover {
 	left: -10px;
+	background-color: rgb(147,233,196);
 }
 
 .next:hover {
 	right: -18px;
+	background-color: rgb(147,233,196);
 }
 
 /*body styles*/
