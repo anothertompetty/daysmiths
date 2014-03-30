@@ -759,8 +759,6 @@ p.about {
 	max-width: 700px;
 	margin: 0 auto;
 	text-align: center;
-	font-size: 24px;
-	line-height: 125%;
 	-webkit-animation: fadeindown 1.5s;
 	   -moz-animation: fadeindown 1.5s; 
         -ms-animation: fadeindown 1.5s; 
@@ -830,6 +828,11 @@ p.about {
 
 .step {
 	width: 66%;
+}
+
+p.about {
+	font-size: 24px;
+	line-height: 125%;
 }
 
 }
