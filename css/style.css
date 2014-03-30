@@ -43,8 +43,13 @@ img a
 }
 
 footer {
-	background-color: #3c3c3c;
+	position: relative;
+	padding: 20px;
+	margin: 0 auto;
 	margin-top: 60px;
+	bottom: 0px;
+	text-align: center;
+	background-color: #3c3c3c;
 }
 
 .bottom {
@@ -53,6 +58,7 @@ footer {
 
 .bottom p {
 	color: #fff;
+	text-align: center;
 }
 
 /*sign up form*/
@@ -714,9 +720,7 @@ header ul {
 }
 
 footer {
-	position: relative;
-	bottom: 0px;
-	height: auto;
+	
 }
 
 }
