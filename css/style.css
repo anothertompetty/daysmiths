@@ -43,7 +43,6 @@ img a
 }
 
 footer {
-	position: relative;
 	padding: 20px;
 	margin: 0 auto;
 	margin-top: 60px;
@@ -691,7 +690,8 @@ header ul {
 }
 
 .item.last {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
+	box-sizing: border-box;
 }
 
 /*day button fade in and hover etc.*/
