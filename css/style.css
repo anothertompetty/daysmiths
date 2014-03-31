@@ -565,7 +565,7 @@ header ul a, .pulldown {
 }
 
 header ul a:hover {
-	border: 3px #3c3c3c solid;
+	background-color: #f0f0f0;
 }
 
 .pulldown:hover {
