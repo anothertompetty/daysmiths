@@ -1,3 +1,10 @@
+//view-all
+
+$(".view-all-trigger").click(viewAll)
+	function viewAll() {
+		$("#view-all").fadeToggle(400);
+	}
+
 //sign-up top
 
 $(".signup").click(signupmenu)
