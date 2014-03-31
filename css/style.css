@@ -201,6 +201,14 @@ header img.logo a {
 	cursor: pointer;
 }
 
+p.view-all-trigger {
+	text-indent: -9999px;
+}
+
+.close-icon {
+	background: url('../img/assets/close.svg') center no-repeat;
+}
+
 .prev, .next {
 	position: absolute;
 	top: 108px;
