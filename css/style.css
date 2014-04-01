@@ -1,7 +1,7 @@
 /* 
 Author: Tom Petty
 anothertompetty.com
-Copyright 2014
+Copyright etc. 2014
 */
 
 /* reset */
@@ -425,13 +425,13 @@ hr {
 
 /*typography styles*/
 
-h2, .why-signup h2, .handshake h3, #view-all ul {
+h2, blockquote, .why-signup h2, .handshake h3, #view-all ul {
 	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }
 
-h2, .handshake h3, #view-all ul {
+h2, blockquote, .handshake h3, #view-all ul {
 	font-style: none;
 	font-size: 22px;
 	line-height: 110%;
@@ -445,8 +445,8 @@ h2, .why-signup h2, .handshake h3, #view-all ul {
 }
 
 blockquote {
-	font-size: 24px;
-	line-height: 130%;
+	font-size: 28px;
+	line-height: 120%;
 }
 
 blockquote, .why-signup h2 {
@@ -501,7 +501,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .person:hover {
-	color: rgb(128,227,182);
+	color: #3c3c3c;
 }
 
 p.pullup {
@@ -660,8 +660,8 @@ img.avatar {
 }
 
 blockquote {
-	font-size: 24px;
-	line-height: 130%;
+	font-size: 36px;
+	line-height: 110%;
 }
 
 .item {
