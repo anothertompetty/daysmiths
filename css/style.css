@@ -678,7 +678,8 @@ blockquote {
 }
 
 .item {
-	height: 392px;
+	height: 486px;
+	padding: 180px 40px;
 }
 
 .item:hover .action {  
@@ -748,7 +749,6 @@ header ul {
 .item {
 	display: inline-block;
 	float: left;
-	padding: 180px 40px;
 }
 
 .item.last {
@@ -766,10 +766,6 @@ header ul {
 
 .action a {
 	margin-top: 40px;
-}
-
-.item {
-	height: 486px;
 }
 
 .item:hover .action {  
