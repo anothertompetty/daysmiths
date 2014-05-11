@@ -181,7 +181,7 @@ header img.logo a {
 	background-color: rgb(128,227,182);
 	z-index: 101;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 240px;
 	color: #fff;
 	opacity: 0.95;
 }
@@ -195,6 +195,10 @@ header img.logo a {
 
 #view-all ul li {
 	padding-bottom: 20px;
+}
+
+#view-all a {
+	color: #fff;
 }
 
 .view-all-trigger:hover {
